@@ -11,11 +11,11 @@ class LuckyDraw extends StatefulWidget {
 class _LuckyDrawState extends State<LuckyDraw> {
   Map<String, double> prizes = {
     'BETTER LUCK\n NEXT TIME!': 0.2,
-    'LANYARD': 0.1,
+    'LANYARD': 0.08,
     'BETTER LUCK\n NEXT TIME!  ': 0.15,
-    'KEYCHAIN': 0.21,
+    'KEYCHAIN': 0.26,
     'BETTER LUCK\n NEXT TIME!   ': 0.1,
-    'SMALL MOUSE PAD': 0.08,
+    'SMALL MOUSE PAD': 0.05,
     ' BETTER LUCK\n NEXT TIME!   ': 0.15,
     'LARGE MOUSE PAD': 0.01,
   };
