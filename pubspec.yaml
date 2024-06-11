@@ -44,13 +44,15 @@ dev_dependencies:
 flutter:
   assets:
     - assets/background/background.png
-    - assets/elements/Decoration.png
-    - assets/elements/PrizePool.png
-    - assets/elements/Logo_red.png
+    - assets/elements/Solana Logo.png
+    - assets/elements/Keychain.png
+    - assets/elements/Lanyard.png
+    - assets/elements/pad chuot nho.png
+    - assets/elements/pad chuot to.png
   fonts:
-    - family: ValorantFont
+    - family: PrimaryFont
       fonts:
-        - asset: assets/fonts/ValorantFont.ttf
+        - asset: assets/fonts/Kanit-Bold.ttf
     - family: Redig
       fonts:
         - asset: assets/fonts/Redig-Regular.otf

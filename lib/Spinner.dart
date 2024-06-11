@@ -29,14 +29,14 @@ class _SpinnerState extends State<Spinner> {
         style: const FortuneItemStyle(
           color: Colors.transparent, // Set text color to #FF4753
           borderColor:
-              Color.fromARGB(255, 255, 71, 83), // Set border color to #FF4753
+              Color.fromARGB(255, 255, 255, 255), // Set border color to #FF4753
           borderWidth: 5,
           textAlign: TextAlign.center,
           textStyle: TextStyle(
             fontFamily: 'ValorantFont',
             fontSize: 21,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 255, 71, 83),
+            color: Color.fromARGB(255, 255, 255, 255),
           ),
         ),
       ));
@@ -102,11 +102,11 @@ class _SpinnerState extends State<Spinner> {
       ratio.add(value);
     });
     //check if ratio sum is 1
-    double sum_ratio = 0;
+    double sumRatio = 0;
     for (int i = 0; i < ratio.length; i++) {
-      sum_ratio += ratio[i];
+      sumRatio += ratio[i];
     }
-    if (sum_ratio != 1) {
+    if (sumRatio != 1) {
       print("Ratio sum is not 1");
       return -1;
     }
@@ -147,7 +147,7 @@ class _VShapePainter extends BoxPainter {
     canvas.drawPath(
         path,
         Paint()
-          ..color = const Color.fromARGB(
-              255, 255, 71, 83)); // Replace Colors.red with your desired color
+          ..color = const Color.fromARGB(255, 255, 255,
+              255)); // Replace Colors.red with your desired color
   }
 }

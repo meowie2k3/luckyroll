@@ -14,9 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color.fromARGB(255, 255, 71, 83),
-        fontFamily: 'ValorantFont'
-        ),
+          primaryColor: const Color.fromARGB(255, 255, 255, 255),
+          fontFamily: 'PrimaryFont'),
       home: const LuckyDraw(),
     );
   }

@@ -10,13 +10,11 @@ class LuckyDraw extends StatefulWidget {
 
 class _LuckyDrawState extends State<LuckyDraw> {
   Map<String, double> prizes = {
-    'BETTER LUCK\n NEXT TIME!': 0.15,
+    'BETTER LUCK\n NEXT TIME!': 0.2,
     'LANYARD': 0.1,
-    'BETTER LUCK\n NEXT TIME!  ': 0.1,
-    'KEYCHAIN': 0.2,
+    'BETTER LUCK\n NEXT TIME!  ': 0.15,
+    'KEYCHAIN': 0.21,
     'BETTER LUCK\n NEXT TIME!   ': 0.1,
-    'TOTE BAG': 0.01,
-    'BETTER LUCK\n NEXT TIME! ': 0.1,
     'SMALL MOUSE PAD': 0.08,
     ' BETTER LUCK\n NEXT TIME!   ': 0.15,
     'LARGE MOUSE PAD': 0.01,
@@ -40,13 +38,38 @@ class _LuckyDrawState extends State<LuckyDraw> {
             ),
           ),
           Transform.translate(
-            offset: const Offset(-35, 60),
-            child: Image.asset('assets/elements/Decoration.png'),
+            offset: const Offset(-600, 0),
+            child: Image.asset('assets/elements/Solana Logo.png'),
           ),
           Transform.translate(
-            offset: const Offset(10, 60),
-            child: Image.asset('assets/elements/PrizePool.png'),
+            offset: const Offset(850, -50),
+            child: Image.asset(
+              'assets/elements/Keychain.png',
+              scale: 1.2,
+            ),
           ),
+          Transform.translate(
+            offset: const Offset(900, 150),
+            child: Image.asset(
+              'assets/elements/Lanyard.png',
+              scale: 0.1,
+            ),
+          ),
+          Transform.translate(
+            offset: const Offset(850, 180),
+            child: Image.asset(
+              'assets/elements/pad chuot to.png',
+              scale: 1.3,
+            ),
+          ),
+          Transform.translate(
+            offset: const Offset(700, -150),
+            child: Image.asset(
+              'assets/elements/pad chuot nho.png',
+              scale: 1.1,
+            ),
+          ),
+
           Center(
             child: Spinner(prizes: prizes),
           ),
